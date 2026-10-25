@@ -12,6 +12,8 @@ BOARD = HT_HT32F52342_52
 
 # The stock Cheng Yong IAP bootloader (04D9:1301) stays in place below 0x3000.
 BOOTLOADER = custom
+# No QMK flashing tool speaks its HID update protocol, so :flash points to one that does.
+PROGRAM_CMD = echo 'Flash mk/typist with cykb.py, see https://github.com/jpsutton/mk-typist-tools' >&2; false
 
 # The app must start exactly at 0x3200 (see ld/HT32F52352_MK_TYPIST.ld), and
 # sets VTOR itself instead of relying on the IAP to do it.
