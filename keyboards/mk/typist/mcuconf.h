@@ -22,3 +22,7 @@
 
 #define HT32_USB_USE_USB0 TRUE
 #define HT32_USB_USB0_IRQ_PRIORITY 2
+
+// Indicator LEDs: MBI5042 grayscale clock and row refresh timer
+#define HT32_PWM_USE_GPTM1 TRUE
+#define HT32_GPT_USE_BFTM1 TRUE

@@ -17,3 +17,6 @@ BOOTLOADER = custom
 # sets VTOR itself instead of relying on the IAP to do it.
 EXTRALDFLAGS = -Wl,--defsym=__vectors_align__=512
 OPT_DEFS += -DCRT0_VTOR_INIT=TRUE
+
+# Indicator LEDs (MBI5042)
+SRC += mbi5042.c
